@@ -1,6 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(61, 59, 59);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    background: linear-gradient(135deg, #db6fc6, #e4c583);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 70%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.search button {
+    width: 30%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.weather img {
+    max-width: 100%;
+    height: auto;
+}
+
+.temp {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.details .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.details .col img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 3vw;
+    margin-top: -6px;
+}
+
+.extra-details {
+    margin-top: 20px;
+}
+
+.extra-details p {
+    margin: 5px 0;
+    font-size: 3vw;
+}
+
+@media (min-width: 600px) {
+    .temp, .city, .humidity, .wind, .extra-details p {
+        font-size: initial;
+    }
+    
+    .temp {
+        font-size: 80px;
+    }
+
+    .city {
+        font-size: 45px;
+    }
+
+    .humidity, .wind, .extra-details p {
+        font-size: 28px;
+    }
 }

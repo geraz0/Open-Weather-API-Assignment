@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Weather API Assignment</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7c1d1e6c8d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+<div class="container">
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter Zip Code" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        <div class="weather">
+            <img src="./sunny.png" alt="company logo" class="company-weather-icon">
+            <h1 class="temp">80°F</h1>
+            <h2 class="city">Wilmington, NC</h2>
+            <div class="extra-details">
+                <p class="date">Date: </p>
+                <p class="hi-lo">Hi: / Lo:</p>
+                <p class="condition">Conditions: </p>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="./humidity.png" alt="humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p> 
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./wind.png" alt="wind">
+                    <div>
+                        <p class="wind">15 mph</p>
+                        <p>Wind Speed</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="api.js"></script>
+
 </body>
 </html>
