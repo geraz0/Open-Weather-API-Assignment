@@ -41,12 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const weatherResponse = await fetch(apiUrlWeather);
             const weatherData = await weatherResponse.json();
 
+            //displayWeather(weatherData); calls the displayWeather function to display the fetched weather data.
+            //catch (error) { console.error('Error fetching weather data:', error); } handles any errors that occur during the fetch process.
             displayWeather(weatherData);
         } catch (error) {
             console.error('Error fetching weather data:', error);
         }
     }
 
+//Purpose: Updates the DOM elements with the fetched weather data.
     function displayWeather(data) {
         const cityElement = document.querySelector('.city');
         const tempElement = document.querySelector('.temp');
